@@ -5,6 +5,7 @@
 
 #define SECOND_STAGE_VECTOR (void*)0x200
 
+
 /* Jumps to the next stage given its vector */
 __attribute__((noreturn)) static void jump_vector(uint32_t *vector) {
     uint32_t sp = vector[0];
