@@ -207,6 +207,16 @@
 #define BLKEY_OUTPUT_GPIO SN_GPIO2
 #define BLKEY_OUTPUT_PIN 4
 #define PIN_HIGH_WHEN_KEY_HELD 1
+#elif defined(TARGET_QWERTYKEYS_QK65_WIRELESS) // SN32F260
+#include "SN32F260.h"
+#define SN32_BOOTLOADER_ADDRESS 0x1FFF0009
+#define BOOT0_GPIO SN_GPIO3
+#define BOOT0_PIN 5
+/* Escape */
+#define BLKEY_INPUT_GPIO SN_GPIO0
+#define BLKEY_INPUT_PIN 0
+#define BLKEY_OUTPUT_GPIO SN_GPIO2
+#define BLKEY_OUTPUT_PIN 4
 #else
 #error Not configured for this target.
 #endif
